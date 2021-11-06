@@ -14,7 +14,7 @@
   <tr v-for="contact in filterContacts" :key="contact.id">
     <td>{{contact.id}}</td>
     <td>{{contact.login}}</td> 
-    <td><img :src="contact.avatar_url"></td>
+    <td><img class="icon" :src="contact.avatar_url"></td>
   </tr>
   </table>
 </div>
@@ -66,6 +66,10 @@ mounted(){
   margin: 0 auto;
 }
 
+/* body{
+  background-color: blue;
+} */
+
 .github{
   width: 9%;
   margin-left: 1%;
@@ -76,12 +80,31 @@ mounted(){
   justify-content: center;
 }
 
+.icon{
+  width: 100%;
+}
+
 h1:hover{
   color:blue
 }
 
 .github:hover{
   transform: scale(1.2);
+}
+
+
+@media only screen and (max-width: 600px) {
+  .github {
+    width: 30%;
+  }
+  /* .icon{
+    width: 100%;
+  } */
+  .header {
+    display: flex;
+    justify-content: space-evenly;
+    margin: 0px 0px 4px 32px;
+}
 }
 
 table {
@@ -114,17 +137,14 @@ table th:hover{
   background-color: rgb(42, 156, 201);
 }
 
-img{
-  width: 10%;
-}
 
 input[type=text] {
-    width: 31%;
+    width: 36%;
     padding: 12px 20px;
     margin: 31px 0px 0px 0px;
     display: inline-block;
     border: 1px solid #ccc;
-    border-radius: 4px;
+    border-radius: 20px;
     box-sizing: border-box;
 }
 
