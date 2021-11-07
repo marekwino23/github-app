@@ -2,6 +2,7 @@
 <div class="header">
   <h1>Git Hub App</h1>
   <img class="github" src="./assets/github-icon-38980.png"/>
+  <FontAwesomeIcon icon='user-secret'/>
   </div>
   <div class="field">
   <input type="text" placeholder="Filter By Name" v-model="word">
@@ -21,6 +22,7 @@
 </template>
 
 <script>
+
 
 export default {
   name: 'App',
@@ -62,17 +64,14 @@ mounted(){
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   text-align: center;
+  background-color: aliceblue;
   color: #2c3e50;
   margin: 0 auto;
 }
 
-/* body{
-  background-color: blue;
-} */
-
-.github{
-  width: 9%;
-  margin-left: 1%;
+.github {
+    width: 6%;
+    margin-left: 1%;
 }
 
 .header{
@@ -82,10 +81,11 @@ mounted(){
 
 .icon{
   width: 100%;
+  height: auto;
 }
 
 h1:hover{
-  color:blue
+  color:rgb(41, 142, 182)
 }
 
 .github:hover{
@@ -97,9 +97,6 @@ h1:hover{
   .github {
     width: 30%;
   }
-  /* .icon{
-    width: 100%;
-  } */
   .header {
     display: flex;
     justify-content: space-evenly;
