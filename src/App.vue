@@ -136,7 +136,7 @@ table th:hover{
 
 
 input[type=text] {
-    width: 36%;
+    width: 42%;
     padding: 12px 20px;
     margin: 31px 0px 0px 0px;
     display: inline-block;
