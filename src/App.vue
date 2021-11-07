@@ -101,14 +101,13 @@ h1:hover{
     display: flex;
     justify-content: space-evenly;
     margin: 0px 0px 4px 32px;
-}
-}
+}}
 
 table {
     font-family: Arial, Helvetica, sans-serif;
     border-collapse: collapse;
     width: 50%;
-    margin-left: 25%;
+    margin: 0 auto;
     margin-top: 4%;
 }
 
